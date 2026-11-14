@@ -28,7 +28,7 @@ export interface Story {
   coverGradient: string;
   publishedAt: string; // ISO date
   likes: number;
-  isDemo: true;
+  isDemo: boolean;
   chapters: Chapter[];
 }
 
