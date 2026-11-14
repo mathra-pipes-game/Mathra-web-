@@ -12,7 +12,7 @@ export function Hero() {
   const fadeUp = (delay: number) => ({
     initial: reduce ? false : { opacity: 0, y: 24 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.9, delay, ease: [0.2, 0.8, 0.2, 1] as const },
+    transition: { duration: 0.9, delay, ease: 'easeOut' as const },
   });
 
   return (
