@@ -36,7 +36,7 @@ function fromRow(row: any): LiveStory {
     coverGradient: 'linear-gradient(140deg, #2a0f4a, #7c3aed 60%, #3b82f6)',
     publishedAt: (row.published_at ?? row.created_at ?? '').slice(0, 10),
     likes: row.story_likes?.[0]?.count ?? 0,
-    isDemo: row.is_demo === true,
+    isDemo: (row.is_demo === true) as true,
     chapters,
   };
 }
